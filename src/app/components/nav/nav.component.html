@@ -1,0 +1,13 @@
+<nav>
+  <ul class="navigator">
+    <img
+      class="netflixlogo"
+      src="../../../assets/images/LOGO/logo.png"
+      alt="Netflixlogo"
+    />
+    <li class="navigator__item" *ngFor="let element of nav">
+      <a href="{{ element.link }}">{{ element.name }}</a>
+    </li>
+    <button (click)="nightMode()">{{theme}}</button>
+  </ul>
+</nav>

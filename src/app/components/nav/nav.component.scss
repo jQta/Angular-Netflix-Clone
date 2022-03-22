@@ -1,0 +1,25 @@
+.netflixlogo {
+  width: 64px;
+  height: 32px;
+}
+
+.navigator {
+  height: 4vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  &__item a {
+    color: red;
+
+    &:hover {
+      color: rgba(0, 150, 150, 0.63);
+    }
+  }
+}
+
+button {
+  border-style: none;
+  background: transparent;
+  font-size: 18px;
+}

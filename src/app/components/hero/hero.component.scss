@@ -1,0 +1,40 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  counter-reset: num_top;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    img {
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      width: 150px;
+      height: 200px;
+      z-index: 1;
+    }
+    :hover {
+      transform: scale(1.15);
+    }
+
+    &:before {
+      content: counter(num_top);
+      counter-increment: num_top;
+      position: relative;
+      left: 52px;
+      font-family: sans-serif;
+      font-size: 275px;
+      color: black;
+      -webkit-text-stroke: 4px rgb(155, 147, 147);
+    }
+  }
+}
+
+h4 {
+  position: relative;
+  top: 28px;
+  color: rgba(122, 122, 122, 0.842);
+  text-transform: uppercase;
+}

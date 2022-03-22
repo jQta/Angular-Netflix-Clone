@@ -1,0 +1,22 @@
+.gallery {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  &__item {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    img {
+      width: 300px;
+      height: 180px;
+    }
+    :hover {
+      transform: scale(1.11);
+    }
+  }
+}
+
+h3 {
+  color: rgba(122, 122, 122, 0.842);
+  text-transform: uppercase;
+}
